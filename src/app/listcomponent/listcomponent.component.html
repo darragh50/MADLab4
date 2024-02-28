@@ -1,0 +1,29 @@
+<!-- Code completed in earlier part of lab - not needed anymore
+<ol> Has to be updated manually
+    <li>{{presidents[0]}}</li>
+    <li>{{presidents[1]}}</li>
+    <li>{{presidents[2]}}</li>
+    <li>{{presidents[3]}}</li>
+</ol>
+
+
+<ul>
+    <li
+     *ngFor="let x of presidents">{{x}}
+    </li>
+</ul>
+
+
+<ol>
+@for (name of presidents; track name)
+{
+    <li>{{name}}</li>
+}
+</ol>
+-->
+
+<ul>
+    <li *ngFor="let pres of presidents">
+        {{pres.name}}, {{pres.term}}
+    </li>
+</ul>
